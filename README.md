@@ -1,4 +1,4 @@
-Indecision App
+Expensify App
 
 Created within the Udemy React course
 
