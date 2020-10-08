@@ -26,13 +26,13 @@ module.exports = (env) => {
                 filename: 'styles.css'
             }),
             new webpack.DefinePlugin({
-                'process.emv.FIREBASE_API_KEY': JSON.stringify(process.env.FIREBASE_API_KEY),
-                'process.emv.FIREBASE_AUTH_DOMAIN': JSON.stringify(process.env.FIREBASE_AUTH_DOMAIN),
-                'process.emv.FIREBASE_DATABASE_URL': JSON.stringify(process.env.FIREBASE_DATABASE_URL),
-                'process.emv.FIREBASE_PROJECT_ID': JSON.stringify(process.env.FIREBASE_PROJECT_ID),
-                'process.emv.FIERBASE_STORAGE_BUCKET': JSON.stringify(process.env.FIERBASE_STORAGE_BUCKET),
-                'process.emv.FIERBASE_MESSAGING_SENDER_ID': JSON.stringify(process.env.FIERBASE_MESSAGING_SENDER_ID),
-                'process.emv.FIREBASE_APP_ID': JSON.stringify(process.env.FIREBASE_APP_ID) 
+                'process.env.FIREBASE_API_KEY': JSON.stringify(process.env.FIREBASE_API_KEY),
+                'process.env.FIREBASE_AUTH_DOMAIN': JSON.stringify(process.env.FIREBASE_AUTH_DOMAIN),
+                'process.env.FIREBASE_DATABASE_URL': JSON.stringify(process.env.FIREBASE_DATABASE_URL),
+                'process.env.FIREBASE_PROJECT_ID': JSON.stringify(process.env.FIREBASE_PROJECT_ID),
+                'process.env.FIERBASE_STORAGE_BUCKET': JSON.stringify(process.env.FIERBASE_STORAGE_BUCKET),
+                'process.env.FIERBASE_MESSAGING_SENDER_ID': JSON.stringify(process.env.FIERBASE_MESSAGING_SENDER_ID),
+                'process.env.FIREBASE_APP_ID': JSON.stringify(process.env.FIREBASE_APP_ID) 
             })
         ],
         module: {
