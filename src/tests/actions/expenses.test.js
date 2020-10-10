@@ -76,15 +76,9 @@ test('Should set edit expense and save to firebase database', (done) => {
             id,
             updates
         });
-        database.ref(`expenses/${id}`).update(updates);
         return database.ref(`expenses/${id}`).once('value');
     }).then((snapshot) => {
-        expect(snapshot.val()).toEqual({
-            amount: expenses[1].amount,
-            description: expenses[1].description,
-            createdAt: expenses[1].createdAt,
-            note: updates.note
-        });
+        expect(snapshot.val().note).toBe(updates.note);
         done();
     });
 });
