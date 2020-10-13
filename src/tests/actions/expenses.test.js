@@ -24,7 +24,7 @@ beforeEach((done) => {
     database.ref('expenses').set(expensesData).then(() => { done(); });
 });
 
-test('Should setup remove expense action aobject', () => {
+test('Should setup remove expense action object', () => {
     const action = removeExpense({ id: '123abc' });
     expect(action).toEqual({
         type: 'REMOVE_EXPENSE',
