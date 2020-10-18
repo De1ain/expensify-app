@@ -3,11 +3,12 @@
     border: none;
     border-radius: 3px;
     color: white;
-    display: inline-block;
+    display: inline;
     font-weight: 300;
     font-size: $font-size-large;
-    line-height: 1;
+    line-height: 4rem;
     padding: $s-size;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -15,6 +16,23 @@
     background: none;
 }
 
-.button--secondary{
+.button--secondary {
     background: #888;
+}
+
+.button--icon {
+    content: url("/images/google.jpeg");
+    float: left;
+    height: 4rem;
+    width: 4rem;
+    background-color: white;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+.button--text {
+}
+
+.button--shadow {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .19);
 }
