@@ -2,17 +2,31 @@ import React from 'react';
 import { connect } from 'react-redux';
 import ExpenseForm from './ExpenseForm';
 import { startEditExpense, startRemoveExpense } from '../actions/expenses';
+import RemoveModal from './RemoveModal';
 
 export class EditExpensePage extends React.Component {
+    state = {
+        removeButtonClicked: undefined
+    };
+
     onSubmit = (expense) => {
         this.props.startEditExpense(this.props.expense.id, expense);
         this.props.history.push('/');
     };
 
     onRemove = () => {
+        this.setState(() => ({ removeButtonClicked: true }));
+
+    };
+
+    handleRemoveYes = () => {
         this.props.startRemoveExpense({ id: this.props.expense.id });
         this.props.history.push('/');
-    };
+    }
+
+    handleRemoveNo = () => {
+        this.setState(() => ({ removeButtonClicked: undefined }));
+    }
 
     render() {
         return (
@@ -28,6 +42,11 @@ export class EditExpensePage extends React.Component {
                         onSubmit={this.onSubmit}
                     />
                     <button className="button button--secondary" onClick={this.onRemove}>Remove Expense</button>
+                    <RemoveModal
+                        removeButtonClicked={this.state.removeButtonClicked}
+                        handleRemoveYes={this.handleRemoveYes}
+                        handleRemoveNo={this.handleRemoveNo}
+                    />
                 </div>
             </div>
         );
@@ -36,7 +55,8 @@ export class EditExpensePage extends React.Component {
 
 const mapStateToProps = (state, props) => {
     return {
-        expense: state.expenses.find((expense) => expense.id === props.match.params.id)
+        expense: state.expenses.find((expense) => expense.id === props.match.params.id),
+        removeButtonClicked: state.removeButtonClicked
     }
 };
 
