@@ -10,15 +10,22 @@ exports[`Should correctly render login page 1`] = `
     <h1
       className="box-layout__title"
     >
-      Tim's Expensify App
+      Expensify
     </h1>
     <p>
-      It's time to get your expenses under control.
+      It's time to get your expenses under control
     </p>
     <button
-      className="button"
+      className="button button--shadow"
     >
-      Login with Google
+      <span
+        className="button--icon"
+      />
+      <span
+        className="button--text"
+      >
+        Login with Google
+      </span>
     </button>
   </div>
 </div>
