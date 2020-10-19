@@ -12,6 +12,10 @@
     text-decoration: none;
 }
 
+.button--hover-darken:hover {
+    background-image: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30));
+}
+
 .button--link {
     background: none;
 }
@@ -30,9 +34,10 @@
     margin-right: 1rem;
 }
 
-.button--text {
-}
-
 .button--shadow {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+}
+
+.button--confirm{
+    margin: 2rem;
 }

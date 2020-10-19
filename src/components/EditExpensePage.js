@@ -19,14 +19,14 @@ export class EditExpensePage extends React.Component {
 
     };
 
-    handleRemoveYes = () => {
+    handleRemoveConfirm = () => {
         this.props.startRemoveExpense({ id: this.props.expense.id });
         this.props.history.push('/');
-    }
+    };
 
-    handleRemoveNo = () => {
+    handleRemoveCancel = () => {
         this.setState(() => ({ removeButtonClicked: undefined }));
-    }
+    };
 
     render() {
         return (
@@ -41,11 +41,11 @@ export class EditExpensePage extends React.Component {
                         expense={this.props.expense}
                         onSubmit={this.onSubmit}
                     />
-                    <button className="button button--secondary" onClick={this.onRemove}>Remove Expense</button>
+                    <button className="button button--secondary button--hover-darken" onClick={this.onRemove}>Remove Expense</button>
                     <RemoveModal
                         removeButtonClicked={this.state.removeButtonClicked}
-                        handleRemoveYes={this.handleRemoveYes}
-                        handleRemoveNo={this.handleRemoveNo}
+                        handleRemoveConfirm={this.handleRemoveConfirm}
+                        handleRemoveCancel={this.handleRemoveCancel}
                     />
                 </div>
             </div>
@@ -57,7 +57,7 @@ const mapStateToProps = (state, props) => {
     return {
         expense: state.expenses.find((expense) => expense.id === props.match.params.id),
         removeButtonClicked: state.removeButtonClicked
-    }
+    };
 };
 
 const mapDispatchToProps = (dispatch, props) => (

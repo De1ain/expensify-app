@@ -17,27 +17,27 @@
     opacity: 0;
 }
 
-.modal{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    background: $light-blue;
-    color: white;
+.modal {
+    background: $off-white;
+    border: 1px solid darken($off-white, 7%);
     max-width: 30rem;
-    width: 30rem;
-    outline: 1px;
+    outline: none;
     padding: $l-size;
     text-align: center;
-    border-radius: 3px;
 }
 
 .modal__title {
     margin: 0 0 $m-size 0;
 }
 
-.modal__body{
+.modal__body {
     font-size: 2rem;
     font-weight: 300;
     margin: 0 0 $l-size 0;
     word-break: break-all;
+}
+
+.modal__inputs {
+    align-items: center;
+    justify-content: center;
 }

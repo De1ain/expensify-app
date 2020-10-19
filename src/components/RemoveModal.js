@@ -4,8 +4,7 @@ import Modal from 'react-modal';
 const RemoveModal = (props) => (
     <Modal
         isOpen={!!props.removeButtonClicked}
-        // isOpen={true}
-        onRequestClose={props.handleRemoveNo}
+        onRequestClose={props.handleRemoveCancel}
         contentLabel="RemoveExpense"
         ariaHideApp={false}
         closeTimeoutMS={200}
@@ -14,8 +13,10 @@ const RemoveModal = (props) => (
     >
         <h3 className="modal__title">Remove Expense</h3>
         <p>Are you sure you want to remove expense?</p>
-        <button className="button" onClick={props.handleRemoveYes}>Yes</button>
-        <button className="button" onClick={props.handleRemoveNo}>No</button>
+        <div className="input-group modal__inputs">
+            <button className="button button--confirm button--hover-darken" onClick={props.handleRemoveConfirm}>Remove</button>
+            <button className="button button--secondary button--hover-darken" onClick={props.handleRemoveCancel}>Cancel</button>
+        </div>
     </Modal>
 );
 
