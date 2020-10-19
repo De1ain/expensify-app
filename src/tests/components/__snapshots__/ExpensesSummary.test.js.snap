@@ -16,7 +16,8 @@ exports[`Should correctly render ExpensesSummary component with 0 expenses 1`] =
       expenses
        totalling: 
       <span>
-        $0.00
+        ₪
+        0.00
       </span>
       <div
         className="page-header__actions"
@@ -51,7 +52,8 @@ exports[`Should correctly render ExpensesSummary component with 1 expenses 1`] =
       expense
        totalling: 
       <span>
-        $1.23
+        ₪
+        1.23
       </span>
       <div
         className="page-header__actions"
@@ -86,7 +88,8 @@ exports[`Should correctly render ExpensesSummary component with multiple expense
       expenses
        totalling: 
       <span>
-        $1,234,567.89
+        ₪
+        1,234,567.89
       </span>
       <div
         className="page-header__actions"
