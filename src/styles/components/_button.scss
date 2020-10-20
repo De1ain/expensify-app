@@ -12,8 +12,15 @@
     text-decoration: none;
 }
 
-.button--hover-darken:hover {
-    background-image: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30));
+.button--hover-darken {
+    // transition: background 0.3s ease;
+    // transition: opacity 200ms ease-in-out;
+    &:hover {
+        // background-image: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30));
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+        // background: opacity(0.5);
+        // background: darken($blue, 10%);
+    }
 }
 
 .button--link {
@@ -35,9 +42,9 @@
 }
 
 .button--shadow {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.button--confirm{
+.button--confirm {
     margin: 2rem;
 }
