@@ -7,17 +7,23 @@
     font-weight: 300;
     font-size: $font-size-large;
     line-height: 4rem;
+    margin: 1rem;
     padding: $s-size;
     text-align: center;
     text-decoration: none;
+    &:disabled {
+        border: 1px solid $grey;
+        background-color: lighten($grey, 40%);
+        color: $dark-grey;
+    }
 }
 
 .button--hover-darken {
     // transition: background 0.3s ease;
     // transition: opacity 200ms ease-in-out;
     &:hover {
-        // background-image: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30));
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+        background-image: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30));
+        // background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
         // background: opacity(0.5);
         // background: darken($blue, 10%);
     }
@@ -32,7 +38,6 @@
 }
 
 .button--icon {
-    content: url("/images/google.jpeg");
     float: left;
     height: 4rem;
     width: 4rem;
@@ -43,6 +48,10 @@
 
 .button--shadow {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button--login {
+    width: 25rem;
 }
 
 .button--confirm {
