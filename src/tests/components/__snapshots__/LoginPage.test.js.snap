@@ -16,15 +16,38 @@ exports[`Should correctly render login page 1`] = `
       It's time to get your expenses under control
     </p>
     <button
-      className="button button--shadow"
+      className="button button--shadow button--login"
     >
-      <span
+      <img
         className="button--icon"
+        src="/images/google-icon.jpeg"
       />
-      <span
-        className="button--text"
-      >
+      <span>
         Login with Google
+      </span>
+    </button>
+    <button
+      className="button button--shadow button--login"
+      disabled={true}
+      onClick={[Function]}
+    >
+      <img
+        className="button--icon"
+        src="/images/facebook-icon.jpg"
+      />
+      <span>
+        Login with Facebook
+      </span>
+    </button>
+    <button
+      className="button button--shadow button--login"
+    >
+      <img
+        className="button--icon"
+        src="/images/github-icon.png"
+      />
+      <span>
+        Login with GitHub
       </span>
     </button>
   </div>

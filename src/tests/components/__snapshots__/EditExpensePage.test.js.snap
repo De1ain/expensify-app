@@ -31,11 +31,15 @@ exports[`Should render startEditExpense page correctly 1`] = `
       onSubmit={[Function]}
     />
     <button
-      className="button button--secondary"
+      className="button button--secondary button--hover-darken"
       onClick={[Function]}
     >
       Remove Expense
     </button>
+    <RemoveModal
+      handleRemoveCancel={[Function]}
+      handleRemoveConfirm={[Function]}
+    />
   </div>
 </div>
 `;
