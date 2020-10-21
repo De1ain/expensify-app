@@ -123,7 +123,7 @@ exports[`Should not set amount if invalid input 1`] = `
   />
   <div>
     <button
-      className="button"
+      className="button button--hover-darken"
     >
       Save Expense
     </button>
@@ -254,7 +254,7 @@ exports[`Should not set amount if invalid input 2`] = `
   />
   <div>
     <button
-      className="button"
+      className="button button--hover-darken"
     >
       Save Expense
     </button>
@@ -385,7 +385,7 @@ exports[`Should render error for invalid form submission 1`] = `
   />
   <div>
     <button
-      className="button"
+      className="button button--hover-darken"
     >
       Save Expense
     </button>
@@ -521,7 +521,7 @@ exports[`Should render error for invalid form submission 2`] = `
   />
   <div>
     <button
-      className="button"
+      className="button button--hover-darken"
     >
       Save Expense
     </button>
@@ -652,7 +652,7 @@ exports[`Should render expense form correctly 1`] = `
   />
   <div>
     <button
-      className="button"
+      className="button button--hover-darken"
     >
       Save Expense
     </button>
@@ -783,7 +783,7 @@ exports[`Should render expense form with expense data 1`] = `
   />
   <div>
     <button
-      className="button"
+      className="button button--hover-darken"
     >
       Save Expense
     </button>

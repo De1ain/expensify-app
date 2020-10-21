@@ -27,9 +27,9 @@ test('Should handle edit onSubmit', () => {
     expect(startEditExpense).toHaveBeenLastCalledWith(expenses[2].id, expenses[2]);
 });
 
-test('Should handle delete on startRemoveExpense', () => {
-    wrapper.find('button').simulate('click');
-    console.log('history.push: ', history.push);
-    expect(history.push).toHaveBeenLastCalledWith('/');
-    expect(startRemoveExpense).toHaveBeenLastCalledWith({ id: expenses[2].id });
-});
+// test('Should handle delete on startRemoveExpense', () => {
+//     wrapper.find('button').simulate('click');
+//     // console.log('history.push: ', history.push);
+//     expect(history.push).toHaveBeenLastCalledWith('/');
+//     expect(startRemoveExpense).toHaveBeenLastCalledWith({ id: expenses[2].id });
+// });

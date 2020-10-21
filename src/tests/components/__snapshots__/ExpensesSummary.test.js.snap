@@ -19,17 +19,27 @@ exports[`Should correctly render ExpensesSummary component with 0 expenses 1`] =
         ₪
         0.00
       </span>
-      <div
-        className="page-header__actions"
-      >
-        <Link
-          className="button"
-          to="/create"
-        >
-          Add Expense
-        </Link>
-      </div>
     </h1>
+    <p
+      className="page-header__title"
+    >
+      In addition, there 
+      are
+       
+      <span />
+       hidden expense
+      s
+    </p>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button button--hover-darken"
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
   </div>
 </div>
 `;
@@ -55,17 +65,27 @@ exports[`Should correctly render ExpensesSummary component with 1 expenses 1`] =
         ₪
         1.23
       </span>
-      <div
-        className="page-header__actions"
-      >
-        <Link
-          className="button"
-          to="/create"
-        >
-          Add Expense
-        </Link>
-      </div>
     </h1>
+    <p
+      className="page-header__title"
+    >
+      In addition, there 
+      are
+       
+      <span />
+       hidden expense
+      s
+    </p>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button button--hover-darken"
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
   </div>
 </div>
 `;
@@ -91,17 +111,27 @@ exports[`Should correctly render ExpensesSummary component with multiple expense
         ₪
         1,234,567.89
       </span>
-      <div
-        className="page-header__actions"
-      >
-        <Link
-          className="button"
-          to="/create"
-        >
-          Add Expense
-        </Link>
-      </div>
     </h1>
+    <p
+      className="page-header__title"
+    >
+      In addition, there 
+      are
+       
+      <span />
+       hidden expense
+      s
+    </p>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button button--hover-darken"
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
   </div>
 </div>
 `;
