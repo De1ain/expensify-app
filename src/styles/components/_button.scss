@@ -12,9 +12,10 @@
     text-align: center;
     text-decoration: none;
     &:disabled {
-        border: 1px solid $grey;
         background-color: lighten($grey, 40%);
-        color: $dark-grey;
+        color: lighten($dark-grey, 10%);
+        box-shadow: none;
+        opacity: 0.7;
     }
 }
 
@@ -22,7 +23,7 @@
     // transition: background 0.3s ease;
     // transition: opacity 200ms ease-in-out;
     &:hover {
-        background-image: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30));
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
         // background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
         // background: opacity(0.5);
         // background: darken($blue, 10%);
@@ -41,8 +42,6 @@
     float: left;
     height: 4rem;
     width: 4rem;
-    background-color: white;
-    padding: 0.5rem;
     margin-right: 1rem;
 }
 
@@ -56,4 +55,26 @@
 
 .button--confirm {
     margin: 2rem;
+}
+
+.button--google {
+    background: white;
+    color: $dark-grey;
+}
+
+.button--facebook {
+    background: $facebook-blue;
+    color: $off-white;
+}
+
+.button--github {
+    background: $github-black;
+    color: $off-white;
+}
+
+.dark-bg {
+    background-blend-mode: multiply;
+    background-color: black;
+    width: 100px;
+    padding: 5px;
 }
